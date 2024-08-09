@@ -113,13 +113,13 @@ body {
   padding-left: 20px;
 }
 
-#extras h1 {
+#contacts h1 {
   color: white;
   padding-left: 20px;
   font-size: 24px;
 }
 
-#extras p {
+#contacts p {
   color: white;
   padding-left: 20px;
 }
@@ -232,3 +232,16 @@ body {
   font-size: 16px; 
 }
 
+#contacts p {
+  line-height: 2em;
+}
+
+#contacts a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0 10px;
+}
+
+#contacts a:hover {
+  color: #5968A2;
+}
