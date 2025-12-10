@@ -29,16 +29,16 @@ a {
   color: inherit;
 }
 
-/* ================= NAV (FIXED ALIGNMENT) ================= */
+/* ================= NAV ================= */
 
 .navbar {
   position: sticky;
   top: 0;
   background: rgba(251, 251, 253, 0.95);
   display: flex;
-  align-items: center;              /* ✅ vertical alignment fix */
+  align-items: center;
   justify-content: space-between;
-  padding: 14px 10%;                /* ✅ tighter padding */
+  padding: 14px 10%;
   border-bottom: 1px solid var(--stroke);
   z-index: 1000;
 }
@@ -46,14 +46,13 @@ a {
 .name {
   font-weight: 600;
   font-size: 1rem;
-  display: flex;                    /* ✅ keeps Nepali + English aligned */
+  display: flex;
   align-items: center;
-  line-height: 1;
 }
 
 .navbar ul {
   display: flex;
-  align-items: center;              /* ✅ aligns nav items with your name */
+  align-items: center;
   gap: 28px;
   list-style: none;
   margin: 0;
@@ -144,7 +143,6 @@ header {
   object-fit: cover;
   width: 100%;
   height: 100%;
-  transition: opacity 0.6s ease;
 }
 
 .slide.active {
@@ -195,7 +193,6 @@ h2 {
   border-radius: 20px;
   padding: 22px;
   border: 1px solid var(--stroke);
-  cursor: pointer;
 }
 
 .experience-card:hover {
@@ -205,7 +202,8 @@ h2 {
 }
 
 .experience-card img {
-  width: 60px;
+  width: 56px;
+  height: auto;
   margin-bottom: 10px;
 }
 
@@ -219,6 +217,8 @@ h2 {
   padding: 8px 14px;
   border-radius: 999px;
   border: 1px solid var(--stroke);
+  font-weight: 600;
+  color: var(--periwinkle);
 }
 
 .exp-buttons a:hover {
@@ -226,7 +226,7 @@ h2 {
   color: white;
 }
 
-/* ================= PROJECTS (TEXT FIT FIXED) ================= */
+/* ================= PROJECTS ================= */
 
 .projects {
   display: grid;
@@ -239,18 +239,18 @@ h2 {
   border-radius: 22px;
   border: 1px solid var(--stroke);
   overflow: hidden;
-  display: flex;                     /* ✅ forces text to stay inside */
+  display: flex;
   flex-direction: column;
 }
 
 .project-card:hover {
-  transform: translateY(-12px) rotate(-0.4deg);
-  box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+  transform: translateY(-10px);
+  box-shadow: 0 20px 45px rgba(0,0,0,0.15);
 }
 
 .project-card img {
   width: 100%;
-  height: 200px;
+  height: 180px;
   object-fit: cover;
 }
 
@@ -259,9 +259,9 @@ h2 {
 }
 
 .project-card p {
-  padding: 0 18px 12px;              /* ✅ text no longer gets cut */
+  padding: 0 18px 12px;
   color: var(--muted);
-  flex-grow: 1;                       /* ✅ pushes link to bottom */
+  flex-grow: 1;
 }
 
 .project-card a {
@@ -270,11 +270,11 @@ h2 {
   font-weight: 600;
 }
 
-/* ================= BEYOND COLLAGE (POP-OUT + TEXT OVERLAY) ================= */
+/* ================= BEYOND COLLAGE ================= */
 
 .collage {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 24px;
 }
 
@@ -283,14 +283,13 @@ h2 {
   border-radius: 20px;
   overflow: hidden;
   cursor: pointer;
-  transform-style: preserve-3d;      /* ✅ depth effect */
+  touch-action: manipulation;
 }
 
 .collage-item img {
   width: 100%;
-  height: 260px;
+  height: 220px;
   object-fit: cover;
-  transition: transform 0.4s ease;
 }
 
 .collage-caption {
@@ -298,23 +297,27 @@ h2 {
   inset: 0;
   background: rgba(0,0,0,0.6);
   color: white;
-  display: flex;                     /* ✅ center text perfectly */
+  display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding: 16px;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 500;
   opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.collage-item:hover img {
-  transform: scale(1.15);            /* ✅ image “pops out” */
 }
 
 .collage-item:hover .collage-caption {
-  opacity: 1;                        /* ✅ text fades in on top */
+  opacity: 1;
+}
+
+.collage-item:hover img {
+  transform: scale(1.1);
+}
+
+/* ✅ MOBILE TAP BEHAVIOR */
+.collage-item.active .collage-caption {
+  opacity: 1;
 }
 
 /* ================= CONTACT ================= */
@@ -334,6 +337,8 @@ h2 {
   padding: 10px 20px;
   border-radius: 999px;
   border: 1px solid var(--stroke);
+  font-weight: 600;
+  color: var(--periwinkle);
 }
 
 .contact-links a:hover {
@@ -344,15 +349,71 @@ h2 {
 /* ================= MOBILE ================= */
 
 @media (max-width: 900px) {
+
+  .navbar {
+    padding: 12px 5%;
+  }
+
+  header {
+    padding: 80px 6% 40px;
+  }
+
   .intro {
     grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .pfp-slideshow {
+    width: 260px;
+    height: 340px;
+    margin: 30px auto 0;
+  }
+
+  section {
+    padding: 80px 6%;
+  }
+
+  h1 {
+    font-size: 1.9rem;
+  }
+
+  h2 {
+    font-size: 1.9rem;
   }
 
   .about-grid {
     grid-template-columns: 1fr;
   }
 
+  .experiences,
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
+  .collage {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+
+  .collage-item img {
+    height: 150px;
+  }
+
   .contact-links {
     flex-direction: column;
+    gap: 16px;
+  }
+}
+
+/* ================= SMALL PHONES ================= */
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .pfp-slideshow {
+    width: 220px;
+    height: 300px;
   }
 }
