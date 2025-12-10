@@ -1,196 +1,320 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
   <title>Amesha Banjara</title>
-      <link rel="stylesheet" href="style.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
+<body>
+
+<!-- NAV -->
+<nav class="navbar">
+  <a class="name" href="#">अमेशा बन्जारा / amesha banjara</a>
+  <ul>
+    <li><a href="#about">about</a></li>
+    <li><a href="#experience">experience</a></li>
+    <li><a href="#projects">projects</a></li>
+    <li><a href="#beyond">beyond</a></li>
+    <li><a href="#contacts">contacts</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<header>
+  <div class="intro">
+    <div class="intro_text">
+      <h1>namaste, i'm amesha 👋</h1>
+      <p class="tagline"> 
+        but i'm also...
+      </p>
+
+      <ul class="hero-list">
+        <li>studying computer science & human-centered ai @ stanford</li>
+        <li>prev. swe intern @ slack</li>
+        <li>growth lead @ marriage pact</li>
+        <li>swe fellow @ netflix x formation</li>
+        <li>director of e-commerce @ like international</li>
+      </ul>
+
+      <div class="hero-buttons">
+        <a href="#experience" class="primary-btn">view experience</a>
+        <a href="#projects" class="secondary-btn">view projects</a>
+      </div>
+    </div>
+
+    <div class="pfp-slideshow">
+      <img src="pfp.jpg" class="slide active">
+      <img src="pfp.jpg" class="slide">
+      <img src="pfp.jpg" class="slide">
+    </div>
+  </div>
+</header>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>about</h2>
+  <p>
+    i am a proud first-generation college student born in kathmandu, nepal,
+    raised in the bay area, and currently studying at stanford university. i love working 
+    on problems at the intersection of software, business, and impact - especially for problems i understand deeply.
+    i’m driven by work that bridges the gap between what people need and what they have, and by ideas
+    that are simply too interesting not to explore. 🧠
+
+  </p>
+
+  <div class="about-grid">
+    <div class="about-card">
+      <h3>interests 🔍</h3>
+      <ul>
+        <li>software development</li>
+        <li>entrepreneurship</li>
+        <li>e-commerce</li>
+        <li>product management</li>
+      </ul>
+    </div>
+
+    <div class="about-card">
+      <h3>tools & tech 🔨</h3>
+      <ul>
+        <li>python, c++, c, javascript, assembly</li>
+        <li>html, css, react/react native, firebase, supabase</li>
+        <li>swift, uikit, pandas, php, hugging face</li>
+        <li>figma, github, jira, ci/cd, bazel, xcode, linux</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <h2>experience</h2>
+
+  <div class="experiences">
+
+    <!-- SLACK -->
+    <div class="experience-card">
+      <img src="slack.png" />
+      <h3>Slack</h3>
+      <span>software engineering intern • san francisco, ca • jun 2025 – sep 2025</span>
+      <ul>
+        <li>built iOS pipeline for meeting notes, salesforce call logging & AI summaries</li>
+        <li>reduced call-logging time by 93% for 20K+ daily users</li>
+        <li>shipped access-control features reducing unauthorized access by 37%</li>
+      </ul>
+      <div class="exp-buttons">
+        <a href="https://slack.com/features/crm" target="blank">my team</a>
+        <a href="https://www.linkedin.com/posts/ameshab_in-honor-of-my-first-day-of-junior-year-at-activity-7375937732604444673-Y0Ol?utm_source=share&utm_medium=member_desktop&rcm=ACoAADXlOtUBh09uSE46uUVMwG_xoaS-FZnwSR4" target="blank">my project</a>
+      </div>
+    </div>
+
+    <!-- NETFLIX x FORMATION -->
+    <div class="experience-card">
+      <img src="netflix.png" />
+      <h3>Netflix × Formation</h3>
+      <span>software engineering fellow • remote • may 2025 – present</span>
+      <ul>
+        <li>selected as top 3% (40 of 1,200+ applicants)</li>
+        <li>advanced training in DSA & system design</li>
+        <li>mentored by engineers from netflix, meta, uber, etc.</li>
+      </ul>
+      <div class="exp-buttons">
+        <a href="https://www.linkedin.com/posts/ameshab_a-rising-tide-award-is-given-to-fellows-activity-7365782357422899200-2H89?utm_source=share&utm_medium=member_desktop&rcm=ACoAADXlOtUBh09uSE46uUVMwG_xoaS-FZnwSR4" target="blank">award</a>
+        <a href="https://formation.dev/partners/netflix" target="blank">the program</a>
+      </div>
+    </div>
+
+    <!-- MARRIAGE PACT -->
+    <div class="experience-card">
+      <img src="mp.png" />
+      <h3>Marriage Pact</h3>
+      <span>growth lead • stanford, ca • aug 2025 – present</span>
+      <ul>
+        <li>lead national launch strategy across 110+ universities</li>
+        <li>optimize school selection via performance data</li>
+        <li>supported growth to 600K+ total matches</li>
+      </ul>
+      <div class="exp-buttons">
+        <a href="https://marriagepact.com/" target="blank">about us</a>
+        <a href="https://www.instagram.com/marriagepact/" target="blank">instagram</a>
+      </div>
+    </div>
+
+        <!-- LIKE INTERNATIONAL -->
+    <div class="experience-card">
+      <img src="likeintern.png" />
+      <h3>Like International</h3>
+      <span>e-commerce manager & software engineer • sacramento, ca • march 2020 - present</span>
+      <ul>
+        <li>scaled multi-channel retail across etsy, shopify & amazon</li>
+        <li>automated inventory & order workflows</li>
+        <li>supported 30k+ orders & 7k+ 5-star reviews</li>
+      </ul>
+      <div class="exp-buttons">
+        <a href="https://www.etsy.com/shop/LikeInternationalUSA" target="blank">our etsy</a>
+        <a href="https://www.likeinternationalusa.com/" target="blank">our website</a>
+      </div>
+    </div>
+
+    <!-- EBAY -->
+    <div class="experience-card">
+      <img src="ebay.svg" />
+      <h3>eBay Pathways Program</h3>
+      <span>software engineering fellow • remote • june 2025 - aug 2025</span>
+      <ul>
+        <li>selected for competitive SWE career development program</li>
+        <li>worked with eBay engineers on DSA</li>
+        <li>exposure to large-scale marketplace systems</li>
+      </ul>
+      <div class="exp-buttons">
+        <a href="#">program</a>
+        <a href="#">takeaways</a>
+      </div>
+    </div>
+
+        <!-- BEATS -->
+    <div class="experience-card">
+      <img src="beats.png" />
+      <h3>Beats by Dre</h3>
+      <span>market intelligence analyst • remote</span>
+      <ul>
+        <li>conducted consumer insights research on 150+ gen z consumers for beats by dr dre</li>
+        <li>helped refine product roadmap and marketing strategy</li>
+      </ul>
+      <div class="exp-buttons">
+        <a href="https://www.extern.com/externships/beats-by-dre-consumer-behavior-market-analysis" target="blank">the program</a>
+      </div>
+    </div>
+
+    <!-- BLUEPRINT TALENT GROUP -->
+    <div class="experience-card">
+      <img src="blueprint.jpeg" />
+      <h3>Blueprint Talent Group</h3>
+      <span>tech strategy intern • remote</span>
+      <ul>
+        <li>Advised startups on product & technical roadmaps</li>
+        <li>Built internal automation tools</li>
+        <li>Supported go-to-market strategies</li>
+      </ul>
+      <div class="exp-buttons">
+        <a href="https://www.blueprinttalent.com/" target="blank">about us</a>
+        <a href="https://www.linkedin.com/posts/ameshab_in-honor-of-classes-starting-this-week-i-activity-7244759981147758592-GNP6?utm_source=share&utm_medium=member_desktop&rcm=ACoAADXlOtUBh09uSE46uUVMwG_xoaS-FZnwSR4" target="blank">my work</a>
+      </div>
+    </div>
+
+    <!-- TRH -->
+    <div class="experience-card">
+      <img src="trh.png" />
+      <h3>The Residential Hermes</h3>
+      <span>co-founder & software engineer • sacramento, ca • mar 2020 – jun 2023</span>
+      <ul>
+        <li>developed a website and ios app showcasing 30+ local businesses</li>
+        <li>featured on good day sacramento and KCRA-TV </li>
+        <li>supported student entrepreneurs and connected volunteers to local business owners</li>
+      </ul>
+      <div class="exp-buttons">
+        <a href="#https://www.instagram.com/theresidentialhermes/" target="blank">about us</a>
+        <a href="https://www.cbsnews.com/sacramento/news/rocklin-teens-launch-nonprofit-website-to-promote-local-businesses/" target="blank">news feature</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>projects</h2>
+
+  <div class="projects">
+
+    <div class="project-card">
+      <img src="kyro.png" />
+      <h3>Kyro</h3>
+      <p>building for wellbeing - plan your life by how you feel</p>
+      <a href="https://web.stanford.edu/class/cs147/projects/DesignforMentalWellbeing/Kyro/" target="_blank">view project→</a>
+    </div>
+
+    <div class="project-card">
+      <img src="genuis.png" />
+      <h3>GenuisAI</h3>
+      <p>building for education - you wouldn't want ur tutor to lie to you </p>
+      <a href="https://devpost.com/software/genuius-your-genuine-genius" target="_blank">view project→</a>
+    </div>
+
+    <div class="project-card">
+      <img src="pillpal.png" />
+      <h3>PillPal</h3>
+      <p>building for healthcare - help your elderly family members manage their medication</p>
+      <a href="https://devpost.com/software/pill-pal-4j19qm" target="_blank">view project →</a>
+    </div>
+
+    <div class="project-card">
+      <img src="accelherate.png" />
+      <h3>AccelHERate</h3>
+      <p>designing for women in tech - find your interests and mentors</p>
+      <a href="https://youtu.be/oW9ec68LWNg" target="_blank">view demo →</a>
+    </div>
+
+    <div class="project-card">
+      <img src="like.png" />
+      <h3>Club Hub</h3>
+      <p>building for overwhelmed college students - centralize your club notifications</p>
+      <a href="https://cs278project.vercel.app/loginnew" target="_blank">visit site →</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- BEYOND -->
+<section id="beyond">
+  <h2>beyond the classroom</h2>
+
+  <div class="collage">
+    <div class="collage-item">
+      <img src="pfp.jpg">
+      <div class="collage-caption">public speaking & mentorship</div>
+    </div>
+
+    <div class="collage-item">
+      <img src="pillpal.png">
+      <div class="collage-caption">hackathons & building</div>
+    </div>
+
+    <div class="collage-item">
+      <img src="accelherate.png">
+      <div class="collage-caption">women in tech leadership</div>
+    </div>
+
+    <div class="collage-item">
+      <img src="like.png">
+      <div class="collage-caption">e-commerce & branding</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contacts">
+  <h2>let's connect</h2>
+  <div class="contact-links">
+    <a href="https://www.linkedin.com/in/ameshab/" target="_blank">linkedin</a>
+    <a href="https://github.com/ameshabanjara" target="_blank">github</a>
+    <a href="https://devpost.com/abanjara" target="_blank">devpost</a>
+    <a href="mailto:abanjara@stanford.edu">email</a>
+  </div>
+</section>
+
+<!-- SLIDESHOW SCRIPT -->
+<script>
+let slides = document.querySelectorAll(".slide");
+let index = 0;
+
+setInterval(() => {
+  slides[index].classList.remove("active");
+  index = (index + 1) % slides.length;
+  slides[index].classList.add("active");
+}, 2500);
+</script>
+
 </body>
-  <nav class="navbar" data-aos="fade-down">
-    <a href="/" class="name">अमेशा बन्जारा / amesha banjara</a>
-    <ul>
-        <li><a href="#about">about</a></li>
-        <li><a href="#experience">experience</a></li>
-        <li><a href="#projects">projects</a></li>
-        <li><a href="#contacts">contacts</a></li>
-    </ul>
-  </nav>
-
-  <header>
-    <div class="intro" data-aos="fade-up">
-      <div class="intro_text">
-        <h1>namaste, i'm amesha! but, i'm also...</h1>
-        <ul>
-            <li> a computer science/data science student @ <a href="https://www.stanford.edu/" target="_blank">stanford university</a></li>
-            <li> incoming swe intern @ <a href="https://slack.com/" target="_blank"> slack (salesforce)</a></li>
-            <li> summer 2025 swe fellow @ <a href="https://formation.dev/partners/netflix" target="_blank"> netflix x formation</a></li>
-            <li> director of e-commerce @ <a href="https://www.etsy.com/shop/LikeInternationalUSA" target="_blank"> like international </a></li>
-            <li> web developer @ <a href="https://www.linkedin.com/company/the-re-write-it-project/" target="_blank">the re-write it project</a></li>
-            <li> fall 2024 fellow @ <a href="https://www.headstartfellowship.com/" target="_blank">the headstart fellowship</a></li>
-            <li> intern @ <a href="https://stanfordwomenincomputerscience.com/" target="_blank">wics</a></li>
-            <li> vp of finance @ <a href="https://www.swite.org/" target="_blank"> swite</a></li>
-            <li> director of engagement @ <a href="https://www.stanfordwomeninbusiness.com/" target="_blank">swib</a></li>
-        </ul>
-      </div>
-      <div class="pfp">
-        <a href="https://www.linkedin.com/in/ameshab/" target="_blank">
-          <img src="pfp.jpg" alt="pfp"></a>
-      </div>
-    </div>
-  </header>
-
-  <section id="about" data-aos="fade-up">
-    <h1>about</h1>
-    <p>i am a proud first-generation college student born in kathmandu, nepal, raised in the bay area, and currently residing in rocklin, california. my passions lie in the crossroads of technology, business, and uplifting underserved populations. currently, i am excited about how ai technology can be harnessed to support small businesses. with these goals in mind, my interests span across:</p>
-        <ul>
-            <li> software development</li>
-            <li> entrepreneurship</li>
-            <li> e-commerce</li>
-            <li> product management</li>
-            <li> and more!</li>
-        </ul>
-
-        <p>though i'm the first in my family to attend college, i come from a family of lifelong learners. so far, i've had the opportunity to learn and use:</p>
-        <ul>
-            <li> python</li>
-            <li> c++</li>
-            <li> c</li>
-            <li> html, css, react js</li>
-            <li> pandas</li>
-            <li> php</li>
-            <li> figma</li>
-            <li> swift</li>
-            <li> etsy, shopify, depop, amazon, mercari, ebay, wix</li>
-        </ul>
-  </section>
-
-  <section id="experience">
-    <h1>experience</h1>
-    <p>i am driven by two things: learning and impact. as i develop my skills, i am naturally committed to making meaningful contributions wherever i work. professionally, i have been able to progress and make impacts in the roles of:</p> 
-
-    <div class="experiences" data-aos="fade-up">
-      <div class="experience" data-aos="fade-left">
-        <div class="exptext">
-          <p>like international ecommerce manager + software engineer</p>
-        </div>
-        <div class="exp-image">
-          <a href="https://www.etsy.com/shop/LikeInternationalUSA" target="_blank">
-            <img src="likeintern.png" alt="like">
-          </a>
-        </div>
-      </div>
-      <div class="experiences" data-aos="fade-up">
-      <div class="experience" data-aos="fade-left">
-        <div class="exptext">
-          <p>beats by dr. dre market intelligence analyst</p>
-        </div>
-        <div class="exp-image">
-          <a href="https://www.beatsbydre.com/" target="_blank">
-            <img src="beats.png" alt="beatsbydre">
-          </a>
-        </div>
-      </div>
-      <div class="experience" data-aos="fade-right">
-        <div class="exptext">
-          <p>the residential hermes co-founder + software engineer</p>
-        </div>
-        <div class="exp-image">
-          <a href="https://www.abc10.com/video/entertainment/television/programs/your-california-life/the-residential-hermes/103-950a1385-47d7-40bc-8284-a8e4e6cd1151" target="_blank">
-            <img src="trh.png" alt="trh">
-          </a>
-        </div>
-      </div>
-        <div class="experience" data-aos="fade-left">
-            <div class="exptext">
-              <p>blueprint talent group llc tech strategy consultant</p>
-            </div>
-            <div class="exp-image">
-              <a href="https://www.blueprinttalent.com/" target="_blank">
-                <img src="blueprint.jpeg" alt="blueprint"></a>
-    </div>
-        </div>
-    </section>
-
-  <section id="projects">
-      <h1>projects</h1>
-      <p>i'm a firm believer that technology is a tool. a powerful one. with this in mind, i have successfully harnessed the magic of technology to......</p>
-
-      <div class="projects" data-aos="fade-up">
-          <div class="flipbox">
-              <div class="flipbox-inner">
-                  <div class="projfront" data-aos="fade-up">
-                      <img src="pillpal.png" alt="project1">
-                  </div>
-                  <div class="projback">
-                    <a href="https://devpost.com/software/pill-pal-4j19qm" target="_blank">
-                      <p> assist elderly users and their caregivers in managing medications, focusing on safety and efficiency to enhance their daily routines</p>
-                    </a>
-                  </div>
-              </div>
-          </div>
-
-         <div class="flipbox">
-            <div class="flipbox-inner">
-                <div class="projfront" data-aos="fade-up">
-                    <img src="accelherate.png" alt="project2">
-                </div>
-                <div class="projback">
-                  <a href="https://youtu.be/oW9ec68LWNg">
-                    <p>empower women to discover new, uncharted career paths and connect with inspiring mentors who can guide their journey</p> </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="flipbox">
-            <div class="flipbox-inner">
-                <div class="projfront" data-aos="fade-up">
-                    <img src="like.png" alt="project3">
-                </div>
-                <div class="projback">
-                  <a href="https://www.likeinternationalusa.com/" target="_blank">
-                    <p>expand a small business’s customer base by setting up and maintaining multiple sales channels for wholesale and retail</p> </a>
-                </div>
-            </div>
-        </div>
-      </div>
-
-    <section id="contacts">
-      <h1>contacts</h1>
-      <p>
-        <a href="https://www.linkedin.com/in/ameshab/" target="_blank">🔗</a>
-        <a href="https://www.linkedin.com/in/ameshab/" target="_blank">find me on linkedin!</a>
-      </p>
-      <p>
-        <a href="mailto:abanjara@stanford.edu">✉️</a>
-        <a href="mailto:abanjara@stanford.edu">send me an email!</a>
-      </p>
-      <p>
-        <a href="https://github.com/ameshabanjara" target="_blank">💻</a>
-        <a href="https://github.com/ameshabanjara" target="_blank">check out my github!</a>
-      </p>
-      <p>
-        <a href="https://devpost.com/abanjara" target="_blank">🖊️</a>
-        <a href="https://devpost.com/abanjara" target="_blank">view my hackathons!</a>
-      </p>
-    </section>
-
-    <section id= "...and some more!">
-      <h1></h1>
-    </section>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.1/dist/simpleParallax.min.js"></script>
-    <script>
-        AOS.init();
-        var image = document.querySelectorAll('.parallax-image');
-        new simpleParallax(image, {
-            scale: 1.5
-        });
-    </script>
-
-  </body>
-  </html>
+</html>
